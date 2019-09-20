@@ -17,7 +17,7 @@ void loop(){
     estado = digitalRead(8);    //Leer estado del switch
     if((estado ==HIGH) && (estadoanterior ==LOW)) {
         salida = 1 - salida;
-        delay(20)
+        delay(20);
     }
 
     estadoanterior = estado;    //Guarda el valor actual
